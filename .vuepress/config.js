@@ -19,21 +19,6 @@ module.exports = {
     ]
   ],
   "theme": "reco",
-  plugins: [
-    [
-      '@vuepress-reco/vuepress-plugin-kan-ban-niang',
-      {
-        theme: ['z16', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku'],
-        messages: {
-          welcome: '欢迎来到 ' + 'XiolBlog',
-          home: '心里的花，我想要带你回家。',
-          theme: '好吧，希望你能喜欢我的其他小伙伴。',
-          close: '你知道我喜欢吃什么吗？痴痴地望着你。'
-        },
-      }
-    ],
-    // ['vuepress-plugin-sakura']
-  ],
   "themeConfig": {
     "nav": [
       {
@@ -117,5 +102,20 @@ module.exports = {
   },
   "markdown": {
     "lineNumbers": true
-  }
+  },
+  plugins: [
+    [
+      '@vuepress-reco/vuepress-plugin-kan-ban-niang',
+      {
+        theme: ['z16', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku'],
+        messages: {
+          welcome: '欢迎来到 ' + 'XiolBlog',
+          home: '心里的花，我想要带你回家。',
+          theme: '好吧，希望你能喜欢我的其他小伙伴。',
+          close: '你知道我喜欢吃什么吗？痴痴地望着你。'
+        },
+      }
+    ],
+    // ['vuepress-plugin-sakura']
+  ],
 }

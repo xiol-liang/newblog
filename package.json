@@ -13,5 +13,9 @@
     "vuepress-plugin-sakura": "^1.2.1",
     "vuepress-theme-reco": "1.6.10"
   },
-  "description": "新主题博客"
+  "description": "新主题博客",
+  "dependencies": {
+    "serve": "^13.0.2",
+    "sitemap": "^7.1.1"
+  }
 }
