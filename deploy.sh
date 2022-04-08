@@ -4,10 +4,10 @@
 set -e
 
 # 生成静态文件
-npm run public:build
+yarn build
 
 # 进入生成的文件夹
-cd public/.vuepress/dist
+cd /.vuepress/dist
 
 # 如果是发布到自定义域名
 # echo 'xiol.cloud/blog' > CNAME

@@ -1,7 +1,6 @@
 ---
 home: true
 heroText: XiolBlog
-tagline: A simple and beautiful vuepress blog theme.
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
@@ -14,9 +13,6 @@ tagline: A simple and beautiful vuepress blog theme.
 bgImageStyle: {
   height: '100vh'
 }
-isShowTitleInHome: false
-actionText: Guide
-actionLink: /views/other/guide
 ---
 
 <NewFont/>

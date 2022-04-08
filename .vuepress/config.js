@@ -1,7 +1,8 @@
 module.exports = {
   "title": "XiolBlog",
+  base: '/newblog/',
   "description": "一名前端er的博客",
-  "dest": "public",
+  "dest": ".vuepress/dist",
   "head": [
     [
       "link",
