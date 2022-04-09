@@ -1,11 +1,12 @@
 ---
 title: XiolBlog的生日
-date: 2022-12-15 22:41:00
+date: 2022-4-8 22:41:00
 sticky: 1
 tags:
  - 博客搭建
  - 成功
  - 分享
+ - 记录
 categories: 
  - 记录
 ---

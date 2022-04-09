@@ -53,7 +53,7 @@ module.exports = {
         "items": [
           {
             "text": "GitHub",
-            "link": "https://github.com/recoluan",
+            "link": "https://github.com/xiol-liang",
             "icon": "reco-github"
           }
         ]
@@ -117,6 +117,35 @@ module.exports = {
         },
       }
     ],
-    // ['vuepress-plugin-sakura']
+    ['@vuepress-reco/vuepress-plugin-bgm-player', {
+      audios: [
+        // 本地文件示例
+
+        // 网络文件示例
+        {
+          name: '강남역 4번 출구',
+          artist: 'Plastic / Fallin` Dild',
+          url: 'https://assets.smallsunnyfox.com/music/2.mp3',
+          cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
+        },
+        {
+          name: '用胳膊当枕头',
+          artist: '최낙타',
+          url: 'https://assets.smallsunnyfox.com/music/3.mp3',
+          cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
+        }
+      ],
+      position: {
+        left: '10px',
+        bottom: '10px',
+        'z-index': '999999'
+      },
+      autoShrink: true,
+      floatPosition: 'left',
+      floatStyle: {
+        bottom: '80px',
+        'z-index': '999999'
+      }
+    }]
   ],
 }

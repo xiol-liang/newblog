@@ -15,6 +15,7 @@
   },
   "description": "新主题博客",
   "dependencies": {
+    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
     "serve": "^13.0.2",
     "sitemap": "^7.1.1"
   }
