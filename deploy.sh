@@ -14,7 +14,7 @@ cd .vuepress/dist
 
 git init
 git add -A
-git commit -m '增加播放器插件'
+git commit -m '修改了主页个人信息块'
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
