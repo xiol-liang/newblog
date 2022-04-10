@@ -1,6 +1,9 @@
 ---
 home: true
-heroText: XiolBlog
+bgImageStyle: {
+  height: '100vh' 
+  }
+
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
@@ -10,9 +13,13 @@ heroText: XiolBlog
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
-bgImageStyle: {
-  height: '100vh'
-}
+banner: # banner 模块的配置
+  heroText: XiolBlog
+  heroImage: /logo.png
+  heroImageStyle:
+    maxWidth: 200px
+    margin: 0 auto 2rem
+ 
 ---
 
 <NewFont/>

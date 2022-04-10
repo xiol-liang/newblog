@@ -76,7 +76,14 @@ module.exports = {
       "tag": {
         "location": 3,
         "text": "标签"
-      }
+      },
+      socialLinks: [     // 信息栏展示社交信息
+        { icon: 'reco-github', link: 'https://github.com/xiol-liang' },
+        { icon: 'reco-weibo', link: 'https://weibo.com/u/6876190424' },
+        { icon: 'reco-bilibili', link: 'https://space.bilibili.com/396411083?spm_id_from=333.1007.0.0' },
+        { icon: 'reco-douyin', link: 'https://www.douyin.com/user/MS4wLjABAAAApep8eQhxaNiM5-jeG0Yn2U21vboRubLs6mvMWWK_sB2jiu4wfftuXJEkAnFuGvLu' },
+        { icon: 'reco-csdn', link: 'https://blog.csdn.net/qq_45677405?spm=1000.2115.3001.5343' },
+      ]
     },
     "friendLink": [
       {
@@ -85,12 +92,6 @@ module.exports = {
         "email": "1156743527@qq.com",
         "link": "https://www.recoluan.com"
       },
-      {
-        "title": "vuepress-theme-reco",
-        "desc": "A simple and beautiful vuepress Blog & Doc theme.",
-        "avatar": "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        "link": "https://vuepress-theme-reco.recoluan.com"
-      }
     ],
     "logo": "/logo.png",
     "search": true,
@@ -99,7 +100,7 @@ module.exports = {
     "author": "xiol",
     "authorAvatar": "/avatar.png",
     "record": "xxxx",
-    "startYear": "2017"
+    "startYear": "2022"
   },
   "markdown": {
     "lineNumbers": true
