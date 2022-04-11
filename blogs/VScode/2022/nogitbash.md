@@ -2,9 +2,6 @@
 title: Git Bash 失效
 date: 2022-4-9 15:07:00
 sidebar: auto
-sticky: 3
-keys: 
- - e10adc3949ba59abbe56e057f20f883e
 tags:
  - IDE
  - 终端

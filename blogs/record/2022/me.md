@@ -1,7 +1,6 @@
 ---
 title: 关于我
 date: 2022-4-9 15:07:00
-sidebar: auto
 sticky: 2
 tags:
  - 作者

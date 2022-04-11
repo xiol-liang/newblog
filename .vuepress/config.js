@@ -85,6 +85,10 @@ module.exports = {
         { icon: 'reco-csdn', link: 'https://blog.csdn.net/qq_45677405?spm=1000.2115.3001.5343' },
       ]
     },
+    valineConfig: {
+      appId: 'sqwQIJg8yRVMzC6lKTWjicbp-gzGzoHsz',// your appId
+      appKey: '83Vqs1jkp0l9KqqImwWKdQq4', // your appKey
+    },
     "friendLink": [
       {
         "title": "午后南杂",
@@ -146,6 +150,13 @@ module.exports = {
       floatStyle: {
         bottom: '80px',
         'z-index': '999999'
+      }
+    }],
+    ['@vuepress-reco/comments', {
+      solution: 'valine',
+      options: {
+        appId: 'sqwQIJg8yRVMzC6lKTWjicbp-gzGzoHsz',// your appId
+        appKey: '83Vqs1jkp0l9KqqImwWKdQq4', // your appKey
       }
     }]
   ],
