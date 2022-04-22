@@ -14,7 +14,7 @@ cd .vuepress/dist
 
 git init
 git add -A
-git commit -m '增加了两篇博客'
+git commit -m '增加了一篇博客'
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
