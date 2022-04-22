@@ -42,6 +42,10 @@ module.exports = {
         "icon": "reco-message",
         "items": [
           {
+            "text": "CS 面试题总结",
+            "link": "/docs/CS_basic/"
+          },
+          {
             "text": "vuepress-reco",
             "link": "/docs/theme-reco/"
           }
@@ -60,6 +64,15 @@ module.exports = {
       }
     ],
     "sidebar": {
+      "/docs/CS_basic/": [
+        "",
+        "OS",
+        "ComputerNetworks",
+        "DataStructure",
+        "Database",
+        "ModernC++",
+        "C++",
+      ],
       "/docs/theme-reco/": [
         "",
         "theme",
