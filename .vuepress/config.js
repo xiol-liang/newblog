@@ -46,6 +46,10 @@ module.exports = {
             "link": "/docs/CS_basic/"
           },
           {
+            "text": "Python 读书笔记",
+            "link": "/docs/Python/"
+          },
+          {
             "text": "vuepress-reco",
             "link": "/docs/theme-reco/"
           }
@@ -72,6 +76,10 @@ module.exports = {
         "Database",
         "ModernC++",
         "C++",
+      ],
+      "/docs/Python/": [
+        "",
+        "Pythonsucha",
       ],
       "/docs/theme-reco/": [
         "",
