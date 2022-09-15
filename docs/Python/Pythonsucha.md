@@ -219,3 +219,100 @@ print(cars)
 - 循环后不必要的缩进
 - 漏掉冒号
 :::
+
+### 3.1创建数值列表
+
+1. `range([start,]end[,step])`生成列系数，或创建数字列表
+2. `min(c)` `max(c)` `sum(c)`对数字列表执行简单的统计计算
+3. 列表解析 将for循环和创建新元素的代码合并成一行，并自动附加新元素
+
+`range(1,5) -> 1 2 3 4`
+
+`range(2,12,3) -> 2 5 8 11`
+
+```py
+# 演示代码3-1
+
+squares = []   # 创建一个名为squares的空列表
+
+for value in range(1,11):     # 也可以用squares = [value**2 for value in range(1,1)]表示
+     squares.append(value**)
+print(squares)
+squares = [value**2 for value in range(1,11)]
+```
+
+```py
+# 运行结果
+[1,4,9,16,25,36,49,64,81,100]
+```
+
+### 3.2使用列表的一部分
+1. <font color="red">切片</font> 和`range()`同理,在到达第二个索引之前的元素后停止
+2. <font color="red">遍历切片</font> 如果要遍历列表的部分元素，可在for循环中使用切片
+3. <font color="red">复制列表</font> 根据既有列表创建全新的列表
+
+```py
+# 演示代码3-2
+
+players = ['charles','martina','michael','florence','eli']
+
+print("Here are the first three players on my team:")
+for players in players[0:3]:
+     print(player.title())
+```
+
+```py
+# 运行结果
+
+Here are the first three player on my team:
+Charles
+Martina
+Michael
+```
+
+## 4. if 语句
+
+### 4.1条件测试
+
+1. <font color="red">==</font> 相等运算符在两边的值相等时返回True,否则返回False
+2. <font color="red">!=</font> 判断两个值是否不等
+3. <font color="red">< > <= >=</font> 数值比较
+4. <font color="red">and or</font> 检查多个条件
+5. <font color="red">布尔表达式</font> 结果要么为True，要么为False
+
+```py
+# 演示代码4-1
+
+banned_users = ['andrew','carolina','david']
+user = 'marie'
+
+if user not in banned_users:
+     print(f"{user.title()},you can post a response if you wish.")
+```
+
+```py
+# 运行结果
+
+Marie,you can post a response if you wish.
+```
+
+### 4.2 if 语句
+
+1. <font color="red">`if-else`结构</font> 在条件测试通过时执行一个操作，在没有通过时执行另一个操作
+2. <font color="red">`if-elif-else`机构</font> 依次检查每个条件测试，直到遇到通过了的条件测试
+3. <font color="red">`elif`代码块</font> 表示多个条件语句
+
+```py
+# 演示代码4-2
+
+age = 12
+if age < 4:
+     price = 0
+elif age < 18:
+     price = 25
+elif age < 65:
+     price = 40
+else:
+price = 20
+print(f"Your admission cost is $(price).")
+```
