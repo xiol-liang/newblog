@@ -14,7 +14,7 @@ cd .vuepress/dist
 
 git init
 git add -A
-git commit -m '增加了 if 语句'
+git commit -m '完善了Python速查地图'
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
