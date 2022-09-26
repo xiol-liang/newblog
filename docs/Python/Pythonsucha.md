@@ -316,3 +316,299 @@ else:
 price = 20
 print(f"Your admission cost is $(price).")
 ```
+
+```py
+#运行结果
+
+Your admission cost is $25.
+```
+
+:::tip
+<font color="red">常用运算符</font>
+- `+、-、*、/`      加减乘除
+- `%`               取余
+- `//`              取整
+- `**`              幂（用x**y或pow(x,y)表示）
+- `&`               位运算符中的位与
+- `|`               位运算符中的位或
+- `^`               位运算符中的位异或
+- `~`               位运算符中的取反
+- `abs(x)`          取绝对值
+- `int(x)`          转为整数
+- `float(x)`        转为浮点数
+- `complex(re,im)`  将参数转化为复数，re为复数的实部，im为复数的虚部 
+:::
+
+## 5. 字典
+
+### <font color="skyblue">`使用字典`</font>
+
+:::tip
+键和值之间用冒号分隔，而键值对之间用逗号分隔
+:::
+
+1. 访问字典中的值
+
+```py
+# 演示代码 5-1
+
+alien_0 = {'color':'green','points':5}
+print(alien_0['color])
+```
+
+```py
+# 运行结果
+
+green
+```
+
+2. 添加（或创建）键值对
+
+```py
+# 演示代码 5-2
+
+alien_0 = {'color':'green','points':5}
+alien_0['x_position'] = 0
+alien_0['y_position'] = 25
+print(alien_0)
+```
+
+```py
+# 运行结果
+
+{'color':'green','points':5,'x_position':0,'y_position':25}
+```
+
+3. 修改字典中的值
+
+```py
+# 演示代码 5-3
+
+alien_0 = {'color':'green'}
+alien_0['color'] = 'yellow'
+print(f"The alien is now {alien_0['color']}.")
+```
+
+```py
+# 运行结果
+
+The alien is now yellow.
+```
+
+4. 删除键值对（注：删除的键值对会永远消失。）
+
+```py
+# 演示代码 5-4
+
+alien_0 = {'color':'green','points':5}
+del alien_0['points]
+print(alien_0)
+```
+
+```py
+# 运行结果
+
+{'color':'green'}
+```
+
+5. 使用get()来访问值
+
+```py
+# 演示代码 5-5
+
+alien_0 = {'color':'green','speed':'slow'}
+point_value = alien_0.get('piont','No point value assigned.')
+print(point_value)
+```
+
+```py
+# 运行结果
+
+No point value assigned.
+```
+
+### <font color="skyblue">`遍历字典`</font>
+
+1. `for` 循环遍历所有键值对
+2. 遍历字典中的所有键/值
+
+```py
+# 演示代码 5-6
+
+user_0 = {
+     'username':'efermi',
+     'first':'enrico',
+     'last':'fermi',
+}
+
+for key,value in user_0.items()    # 使用这两个变量来打印每个键及其相关联的值
+print(f"Key:(key)")
+print(f"Value:(value)")
+```
+
+```py
+# 运行结果
+
+Key: username
+Value: efermi
+Key: first
+Value: enrico
+Key: last
+Value: fermi
+```
+
+## 6. 用户输入和 while 循环
+
+###  <font color="skyblue">`函数input()的工作原理`</font>
+
+1. input()让程序暂停运行，等待用户输入一些文本
+2. int()获取数值输入
+3. 求模运算符%，它将两个数相除并返回余数
+
+```py 
+# 演示代码 6-1
+
+height = input('How tall are you,in inches?')
+height = int(height)
+if height >= 48:
+     print("\nYou're tall enough to ride!")
+else:
+     print("\nYou're be able to ride when you're little older.")
+```
+
+```py
+# 运行结果
+
+How tall are you,in inches? 请输入你的身高（英寸）：20
+
+You're be able to ride when you're a little older.
+```
+
+###  <font color="skyblue">`使用 while 循环`</font>
+
+`for`循环用于针对集合中的每个元素都执行一个代码块，而 `while` 循环则不断运行，直到指定的条件不满足为止。
+
+```py
+# 演示代码 6-2
+
+current_number = 1
+while current_number <= 5:
+     print(current_number)
+     current_number += 1
+```
+
+```py
+#运行结果
+1
+2
+3
+4
+5
+```
+
+## 7. 函数
+
+### <font color="skyblue">`函数定义`</font>
+
+函数是带名字的代码块，用于完成具体的工作，使用关键词def来定义
+
+```py
+# 演示代码 7-1
+
+def greet_user(user_name):
+     """显示简单的问候语"""
+     print(f"Hello!{user_name.title()}")
+
+greet_user("name")
+```
+
+```py
+# 运行结果
+
+Hello!Nana
+```
+
+让函数greet_user()不仅向用户显示Hello!还可以打印出用户的名字，通过在这里添加username,可让函数接受你给username指定的任何值。代码greet_user('nana')调用函数greet_user(),并向它提供执行函数调用print()所需的信息。这个函数接受你传递给它的名字，并向这个人发出问候。
+
+### <font color="skyblue">`函数调用`</font>
+
+需要在程序中多次执行同一项任务时，无需反复编写完成该任务的代码，只需要调用执行该任务的函数，让Python运行其中的代码即可。
+
+```py
+# 演示代码 7-2
+
+def describe_pet(animal_type,pet_name):
+     """显示宠物的信息"""
+     print(f"\n I have a {animal_type}.")
+     print(f"My {animal_type}'s name is {pet_name.title()}.")
+describe_pet('hamster','harry')
+describe_pet('dog','willie')
+```
+
+```py
+# 运行结果
+
+I have a hamster.
+My hamster's name is Harry.
+
+I have a dog.
+My dog's name is Willie.
+```
+
+## 9. 类
+
+### <font color="skyblue">`方法__init__()`</font>
+
+方法__init__()是一个特殊方法，每当你根据Dog类创建新实例时，Python都会自动运行它。在这个方法的名称中，开头和末尾个有两个下划线，这是一种约定，旨在避免Python默认方法与普通方法发生名称冲突。务必确保__init__()的两边都有两个下划线，否则当你使用类来创建实例时，将不会自动调用这个方法，进而引发难以发现的错误。
+
+```py 
+# 演示代码
+
+# 创建一个表示小狗的类 Dog
+# 包含名字和年龄 + 蹲下和打滚
+# 使用类去创建表示特定小狗的实参Dog()传递名字和年龄，self会自动传递
+
+class Dog():
+     """一次模拟小狗的简单尝试。"""
+def __init__(self,name,age):
+     """初始化属性 name 和 age。"""
+     # 以self为前缀的变量都可供类中的所有方法使用
+     # 获取存储在形参name中的值，并将其存储到变量name中，然后该变量被关联到当前创建的实例
+     self.name = name
+     self.age = age
+def sit(self):
+     """模拟小狗收到命令时蹲下"""
+     print(f"(self.name) is now sitting.")
+
+def roll_over(self):
+     """模拟小狗收到命令时打滚。"""
+     print(f"{self.name} rolled over!")
+
+my_dog = Dog('Willie',6)
+print(f"My dog's name is {my_dog.name}.")
+print(f"My dog is {my_dog.age} years old.")
+```
+
+```py
+# 运行结果
+
+My dog's name is Willie.
+My dog is 6 years old.
+```
+
+:::tip
+<font color="red">常用内置函数</font>
+- `print()`           打印输出
+- `input()`           获取用户输出的内容
+- `open()`            用于打开一个文件，创建一个文件句柄
+- `list()`            将一个可迭代对象转换成列表
+- `tuple()`           将一个可迭代对象转换成元祖
+- `reversed()`        讲一个序列翻转，返回翻转序列的迭代器
+- `range()`           生成数据
+- `str()`             将数据转化成字符串
+- `ALL()`             可迭代对象中全部是True，结果才是True
+- `any()`             可迭代对象中一个是True，结果就是True
+- `eval()`            执行字符串类型的代码，并返回最终结果
+- `dir()`             查看对象的内置属性，访问的是对象中的- __dir__()方法
+- `help()`            函数用于查看函数或模块用途的详细说明
+:::
